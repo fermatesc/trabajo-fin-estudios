@@ -1,0 +1,33 @@
+Optimización de carteras de inversión mediante Graph Neural Networks (GNNs) y circuitos cuánticos variacionales, aplicando un enfoque híbrido.
+
+Este trabajo pretende investigar la aplicación del Geometric Deep Learning en el ámbito de las series temporales financieras estructuradas como grafos. La investigación se centrará en el desarrollo de una arquitectura de Message Passing Neural Networks (MPNN),
+buscando evaluar si la computación cuántica híbrida permite una mejor interpretación de dependencias complejas en grafos para la gestión de activos financieros. Se desarrollará un sistema que transforme series temporales en grafos de correlación dinámica, 
+comparando el rendimiento de una GNN clásica frente a una GNN híbrida en términos de precisión de predicción de riesgo y optimización de retornos. Se realizará un análisis empírico comparando la capacidad de generalización y la convergencia de modelos híbridos frente a arquitecturas clásicas de grafos (GCN/GAT) en tareas de optimización de carteras.
+
+
+Wang, J., et al. (2021). Graph Neural Networks in Finance: A Survey.
+
+Bronstein, M. M., Bruna, J., Cohen, T., & Veličković, P. (2021). Geometric Deep Learning: Grids, Groups, Graphs, Geodesics, and Gauges. arXiv.
+
+Gilmer, J., Schoenholz, S. S., Riley, P. F., Vinyals, O., & Dahl, G. E. (2017). Neural Message Passing for Quantum Chemistry. ICML.
+
+Schuld, M., & Killoran, N. (2019). Quantum Machine Learning in Feature Hilbert Spaces. Physical Review Letters.
+
+Cerezo, M., Arrasmith, A., Babbush, R., et al. (2021). Variational Quantum Algorithms. Nature Reviews Physics.
+
+Verdon, G., Tucci, M. A., & Kalaitzidis, P. S. (2019). A Quantum Graph Convolutional Neural Network. arXiv.
+
+
+Objetivos:
+
+- Desarrollar y evaluar un modelo híbrido de Redes Neuronales de Grafos y computación cuántica para la optimización estructural de carteras financieras.
+
+- Diseñar un pipeline en Apache Spark para la construcción de grafos dinámicos a partir de activos del S&P 500.
+
+- Diseñar un modelo de MPNN capaz de procesar grafos de correlación dinámica entre activos financieros
+
+- Integrar capas cuánticas parametrizadas (VQC) en el modelo de grafos para la extracción de características.
+
+- Desplegar un pipeline en la nube (Azure) para el entrenamiento y ajuste de hiperparámetros de los modelos.
+
+- Comparar el rendimiento de ambos modelos mediante distintas métricas (Loss, RMSE) y métricas financieras (Ratio de Sharpe).
